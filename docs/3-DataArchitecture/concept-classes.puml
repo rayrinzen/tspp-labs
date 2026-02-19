@@ -1,0 +1,16 @@
+@startuml
+title Концептуальна діаграма класів (AquaTracker)
+
+class User {
+    +String name
+    +float weight
+    +int dailyGoal
+}
+
+class WaterRecord {
+    +DateTime time
+    +int amount
+}
+
+User "1" -- "*" WaterRecord : tracks
+@enduml
