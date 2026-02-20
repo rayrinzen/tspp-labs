@@ -13,5 +13,3 @@ CREATE TABLE water_records (
     FOREIGN KEY (user_id) REFERENCES users (user_id)
 );
 
-
-
