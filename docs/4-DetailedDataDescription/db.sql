@@ -12,3 +12,6 @@ CREATE TABLE water_records (
     record_date DATE,
     FOREIGN KEY (user_id) REFERENCES users (user_id)
 );
+
+
+
