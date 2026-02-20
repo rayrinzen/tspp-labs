@@ -1,0 +1,26 @@
+name: SQL Linting
+
+on:
+  push:
+    branches: [ "lab4", "master" ]
+  pull_request:
+    branches: [ "lab4", "master" ]
+
+jobs:
+  lint-sql:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install sqlfluff
+        run: pip install sqlfluff
+
+      - name: Lint SQL files
+        run: sqlfluff lint docs/4-DetailedDataDescription/ --dialect ansi

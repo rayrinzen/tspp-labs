@@ -7,16 +7,17 @@
 Документація проекту ведеться за принципом **Docs as Code**.
 
 * **[docs/](./docs/)** — основна папка з документацією.
-    * **[1-SoftwareRequirements/](./1-Software%20Requirements/1.1-ConsumerNeeds.md)** — Лабораторна робота №1: Формалізований опис вимог.
-        * [Бізнес-вимоги (DIKW, Vision)](../docs/1-Software%20Requirements/1.1-ConsumerNeeds.md) — опис цінності продукту.
-        * [Вимоги користувача (Use Case, Gherkin)](../docs/1-Software%20Requirements/1.2-UserRequirements.md) — сценарії взаємодії.
-    * **[2-SoftwarePlanning/](./2-SoftwarePlanning/)** — ЛР №2: Планування (ISO 29148, GitHub Projects).
-    * **[3-DataArchitecture/](./3-DataArchitecture/)** — ЛР №3: Проектування структур даних (UML, JSON).
+    * **[1-SoftwareRequirements/](/docs/1-Software%20Requirements/)** — Лабораторна робота №1: Формалізований опис вимог.
+        * [Бізнес-вимоги (DIKW, Vision)](/docs/1-Software%20Requirements/1.1-ConsumerNeeds.md) — опис цінності продукту.
+        * [Вимоги користувача (Use Case, Gherkin)](/docs/1-Software%20Requirements/1.2-UserRequirements.md) — сценарії взаємодії.
+    * **[2-SoftwarePlanning/](/docs/2-SoftwarePlanning/)** — ЛР №2: Планування (ISO 29148, GitHub Projects).
+    * **[3-DataArchitecture/](/docs/3-DataArchitecture/)** — ЛР №3: Проектування структур даних (UML, JSON).
+    * **[4-DetailedDataDescription/](/docs/4-DetailedDataDescription/)** — ЛР №4: Деталізація логічної моделі та CI (SQL, GitHub Actions).
 
 ---
 
-## Виконані етапи (Лабораторна робота №1)
-У межах першого етапу було реалізовано:
+## Виконані етапи 
+### Лабораторна робота №1
 1.  **Аналіз потреб:** Визначено об'єкт дослідження (фізіологічна потреба у воді).
 2.  **Модель DIKW:** Описано перехід від сирих даних до мудрості керування здоров'ям.
 3.  **Vision:** Сформовано бачення продукту та його переваги над конкурентами.
@@ -31,6 +32,11 @@
 ### Лабораторна робота №3: Проектування даних
 1. **UML-діаграма:** Спроектовано концептуальну модель класів застосунку за допомогою PlantUML.
 2. **JSON Schema:** Розроблено специфікацію для логічної структури даних записів споживання води.
+
+### Лабораторна робота №4: Деталізація даних та CI
+1. **SQL-скрипт:** Розроблено деталізований опис логічної моделі даних згідно з нормами SQL Coding Conventions.
+2. **GitHub Actions:** Налаштовано автоматизовану перевірку (Linting) SQL-коду за допомогою утиліти `sqlfluff`.
+3. **Continuous Integration:** Реалізовано робочий процес автоматичної валідації коду при кожному push або PR.
 
 ---
 
