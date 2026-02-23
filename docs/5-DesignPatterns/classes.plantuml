@@ -1,0 +1,27 @@
+@startuml
+left to right direction
+hide circle
+title Програмні класи системи трекінгу води
+
+class User {
+    - user_id: Integer
+    - full_name: String
+    - weight_num: Float
+    - daily_goal_num: Integer
+    + User(name: String, weight: Float)
+    + set_goal(goal: Integer): void
+    + get_daily_goal(): Integer
+    + display_info(): void
+}
+
+class WaterRecord {
+    - record_id: Integer
+    - amount_num: Integer
+    - record_date: Date
+    - user_ptr: User
+    + WaterRecord(amount: Integer, user: User)
+    + get_record_details(): String
+}
+
+User "1" -- "*" WaterRecord : реєструє >
+@enduml
