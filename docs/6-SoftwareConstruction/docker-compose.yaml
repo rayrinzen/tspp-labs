@@ -1,0 +1,7 @@
+services:
+  db:
+    build:
+      context: ../../
+      dockerfile: docs/6-SoftwareConstruction/Dockerfile
+    ports:
+      - "5432:5432"
